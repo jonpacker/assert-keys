@@ -1,0 +1,21 @@
+{
+  "name": "assert-keys",
+  "version": "1.0.0",
+  "description": "assert an object has some keys",
+  "main": "ak.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jonpacker/assert-keys"
+  },
+  "keywords": [
+    "assert",
+    "keys",
+    "exist",
+    "config"
+  ],
+  "author": "Jon Packer <contact@jonpacker.com>",
+  "license": "MIT"
+}
