@@ -18,7 +18,8 @@ describe('assert-keys', function() {
   });
   it('should accept inherited values in lenient mode', function() {
     assert.doesNotThrow(function() {
-      var obj = Object.create({test:45}, {lol: 'potato'});
+      var obj = Object.create({test:45});
+      obj.lol = 'potato';
       ak(['test', 'lol'])(obj);
     });
   });

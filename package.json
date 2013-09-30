@@ -17,5 +17,8 @@
     "config"
   ],
   "author": "Jon Packer <contact@jonpacker.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  }
 }
