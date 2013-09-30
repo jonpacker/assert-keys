@@ -1,9 +1,12 @@
 var assert = require('assert');
+var util = require('util');
 
 function KeyAsserter(keys, strict) {
   return function(obj) {
     keys.forEach(function(key) {
-      assert(strict ? obj.hasOwnProperty(key) : obj[key] != null);
+      assert(strict ? obj.hasOwnProperty(key) : obj[key] != null,
+             "The key `" + key + "` is required, but was not found in object: " +
+             util.inspect(obj));
     });
   };
 };
